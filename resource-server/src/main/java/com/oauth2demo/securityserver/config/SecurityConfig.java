@@ -22,7 +22,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.POST,"/resource/**").hasAuthority("SCOPE_profile")
                         .anyRequest().authenticated()
                 )
-                .oauth2ResourceServer((oauth2) -> oauth2.jwt(Customizer.withDefaults()));
+                .oauth2ResourceServer(oauth2 -> oauth2.jwt(Customizer.withDefaults()));
         return http.build();
     }
 }

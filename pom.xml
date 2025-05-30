@@ -24,6 +24,7 @@
         <module>basic-security</module>
         <module>authorization-server</module>
         <module>keycloack-resource-server</module>
+        <module>auth-google-opaque-token</module>
     </modules>
 
     <dependencies>
